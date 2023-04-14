@@ -1,0 +1,115 @@
+#balileft {
+    height: 2670px;
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    z-index: -9999;
+    background: linear-gradient(to right, #AFEEEE, white);
+}
+
+#baliright {
+    height: 2670px;
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1000;
+    background: linear-gradient(to left, #AFEEEE, white);
+}
+
+
+/*以上为底部导航栏*/
+
+.head {
+    color: #666;
+    text-align: center;
+    line-height: 70px;
+    height: 70px;
+    font-size: 32px;
+}
+
+.english {
+    text-align: center;
+    line-height: 20px;
+    color: gray;
+}
+
+hr {
+    border-width: 3px;
+    border-top: none;
+    border-color: #888;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* 简介 */
+
+.introduce {
+    width: 1450px;
+    display: flex;
+    margin: auto;
+    border: 5px solid #666;
+}
+
+.introduce img {
+    width: 500px;
+    border: 10px solid #888;
+    flex: 1;
+}
+
+.message {
+    flex: 1;
+    font-size: 20px;
+    background: #666;
+    border: 10px solid #888;
+    color: aliceblue;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 32px;
+    color: #888;
+    text-align: center;
+}
+
+#thirdpart {
+    position: relative;
+    top: 100px;
+    display: block;
+    height: 600px;
+    margin: 0 0px 0 110px;
+}
+
+.thirdli {
+    float: left;
+    width: 320px;
+    height: 240px;
+}
+
+.thirdli img {
+    display: block;
+    border-radius: 8px;
+    padding: 5px;
+    border: 3px solid #d15a39;
+}
+
+.map>img {
+    height: 500px;
+    margin-left: 550px;
+    margin-top: 20px;
+    border: 5px solid #888;
+}
+
+.end {
+    color: #333;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0 30px 0 30px;
+    height: auto;
+}
+
+hr:last-of-type {
+    margin: 0 0 0 0;
+}
