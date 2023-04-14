@@ -1,0 +1,164 @@
+/*以上为底部导航栏*/
+
+#imglist img {
+    border: none;
+    padding: 0px;
+}
+
+#sculpture img {
+    box-shadow: 6px 6px 6px #666;
+    border-radius: 8px;
+}
+
+#moleft {
+    height: 3290px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    z-index: -9999;
+    background: linear-gradient(to right, #AFEEEE, white);
+}
+
+#moright {
+    height: 3290px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1000;
+    background: linear-gradient(to left, #AFEEEE, white);
+}
+
+
+/* 轮播图 */
+
+#banner {
+    width: 600px;
+    height: 700px;
+    border: 2px solid #999;
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 200px;
+    border: 10px solid #888;
+}
+
+#imglist {
+    width: 3000px;
+    height: 700px;
+}
+
+#imglist img {
+    width: 600px;
+    height: 700px;
+}
+
+#imglist li {
+    float: left;
+}
+
+.prev {
+    background: #666;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    left: 209px;
+    top: 45%;
+    cursor: pointer;
+}
+
+.next {
+    background: #666;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    right: 45%;
+    top: 45%;
+    cursor: pointer;
+}
+
+#icolist {
+    position: absolute;
+    top: 670px;
+}
+
+#icolist li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #666;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    float: left;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.content {
+    position: relative;
+}
+
+.introduce {
+    width: 500px;
+    height: 700px;
+    border: 10px solid #666;
+    position: absolute;
+    right: 100px;
+    top: 1px;
+    padding: 5px;
+    background: #999;
+}
+
+.introduce>p {
+    font-size: 20px;
+    line-height: 35px;
+    color: whitesmoke;
+}
+
+.lead {
+    color: orange;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.sculpture {
+    height: 405px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.view {
+    flex: 1;
+    border: 5px solid gray;
+}
+
+.view>img {
+    height: 400px;
+    width: 100%;
+}
+
+.introduce1 {
+    text-align: center;
+    color: orange;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.symbol {
+    width: 700px;
+    margin-left: 400px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 2px;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>莫高窟</title>
+    <!--设置统一样式-->
+    <style>
+        * {
+            list-style: none;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="./mogaoku.css" type="text/css">
+    <link rel="stylesheet" href="../../../index/this_is_css/nav.css" type="text/css">
+    <!--导入css-->
+</head>
+
+<body>
+    <div id="gotop"><a href="#top">回到顶部</a></div>
+    <div id="dody">
+        <div class="nav">
+            <ul class="navleftlist">
+                <li class="navleftli"><a href="../../../index.html">首页</a></li>
+                <li class="navleftli"><a href="../../../nature/model2/yanhu.html">自然风光 ></a>
+                    <ul class="navdroplist">
+                        <li><a href="../../../nature/model2/yanhu.html">茶卡盐湖</a></li>
+                        <li><a href="../../../nature/model3/jiuzhai.html">九寨沟</a></li>
+                        <li><a href="../../../nature/model1/tianchi.html">长白山天池</a></li>
+                        <li><a href="../../../nature/model4/lila.html">张家界</a></li>
+                    </ul>
+                </li>
+                <li class="navleftli"><a href="../../../city/上海/shanghai.htm">繁华都市 ></a>
+                    <ul class="navdroplist">
+                        <li><a href="../../../city/上海/shanghai.htm">上海</a></li>
+                        <li><a href="../../../city/巴黎/bali.htm">巴黎</a></li>
+                        <li><a href="../../../city/纽约/niuyue.html">纽约</a></li>
+                    </ul>
+                </li>
+                <li class="navleftli"><a href="../../../history/历史文化马丘比丘/历史文化马丘比丘2.html">历史文化></a>
+                    <ul class="navdroplist">
+                        <li><a href="../../../history/历史文化马丘比丘/历史文化马丘比丘2.html">马丘比丘</a></li>
+                        <li><a href="../../../history/历史文化长城/历史文化长城.html">长城</a></li>
+                        <li><a href="../../../history/历史文化斗兽场/历史文化斗兽场.html">斗兽场</a></li>
+                    </ul>
+                </li>
+                <li class="navleftli"><a href="../../../art/莫高窟/莫高窟/mogaoku.htm">艺术殿堂></a>
+                    <ul class="navdroplist">
+                        <li><a href="../../../art/莫高窟/莫高窟/mogaoku.htm">莫高窟</a></li>
+                        <li><a href="../../../art/黄鹤楼/黄鹤楼/huanghelou.htm">黄鹤楼</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navrightlist">
+                <li class="navrightli">
+                    <a href="#top"><img class="headimg" src="./img/mgk (4).jpg" alt="头像" title="进入“我的主页”" height="50px" width="80px"></a>
+                </li>
+                <li class="navrightli"><a href="../../莫高窟/莫高窟/mogaoku.htm">更多热门推荐</a></li>
+            </ul>
+        </div>
+        <div id="moleft"></div>
+        <div id="moright"></div>
+        <!--logo图片没找到随便写了两笔-->
+    </div>
+    </div>
+    <div class="content">
+        <!-- 轮播图 -->
+        <div id="banner">
+            <ul id="imglist">
+                <li><img src="./img/mgk (7).jpg" alt=""></li>
+                <li><img src="./img/mgk (2).jpg" alt=""></li>
+                <li><img src="./img/mgk (5).jpg" alt=""></li>
+                <li><img src="./img/mgk (4).jpg" alt=""></li>
+                <li><img src="./img/mgk (7).jpg" alt=""></li>
+            </ul>
+            <ul id="icolist">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+            <div class="prev"><strong>&lt;</strong></div>
+            <div class="next"><strong>&gt;</strong></div>
+        </div>
+        <script>
+            var eprev = document.querySelector('.prev');
+            var enext = document.querySelector('.next');
+            var esico = document.getElementById('icolist').getElementsByTagName('li');
+            var eicolist = document.querySelector('#icolist');
+            var eimglist = document.querySelector('#imglist');
+            var left = 0;
+            var timer;
+            run();
+
+            function run() {
+                if (left <= -2400) {
+                    left = 0;
+                }
+                var m = Math.floor(-left / 600);
+                imglist.style.marginLeft = left + 'px';
+                var n = (left % 600 == 0) ? n = 1200 : n = 10;
+                left -= 10;
+                timer = setTimeout(run, n);
+                icochange(m);
+            }
+            // 我们做一个图片定位函数
+            function imgchange(n) {
+                let lt = -(n * 600);
+                imglist.style.marginLeft = lt + 'px';
+                left = lt;
+            }
+            eprev.onclick = function() {
+                // alert('向前');测试效果
+                // imgchange(0);//试定位第一张
+                let prevgo = Math.floor(-left / 600) - 1;
+                if (prevgo == -1) {
+                    prevgo = 3;
+                }
+                imgchange(prevgo);
+            }
+            enext.onclick = function() {
+                // alert('下一张');测试效果
+                // imgchange(3);//试定位最后一张
+                let nextgo = Math.floor(-left / 600) + 1;
+                if (nextgo == 4) {
+                    nextgo = 0;
+                }
+                imgchange(nextgo);
+            }
+
+            function icochange(m) {
+                for (let index = 0; index < esico.length; index++) {
+                    esico[index].style.backgroundColor = '';
+                }
+                if (m < esico.length) {
+                    esico[m].style.backgroundColor = 'orange';
+                }
+            }
+            eicolist.onclick = function() {
+                var tg = event.target;
+                let ico = tg.innerHTML - 1;
+                imgchange(ico);
+                icochange(ico);
+            }
+            eimglist.onmouseover = function() {
+                clearTimeout(timer);
+            }
+            eimglist.onmouseout = function() {
+                run();
+            }
+        </script>
+        <div class="introduce">
+            <h1>莫高窟(千佛洞)</h1>
+            <p>&emsp;&emsp;坐落于河西走廊的西部尽头的敦煌。它的开凿从十六国时期至元代，前后延续约1000年，这在中国石窟中绝无仅有。 它既为中国古代文明的一个璀璨的艺术宝库，也是古代丝绸之路上曾经发生过的不同文明之间对话和交流的重要见证。 莫高窟现有洞窟735个，保存壁画4.5万多平方米，彩塑2400余尊，唐宋木构窟檐5座，是中国石窟艺术发展演变的一个缩影，在石窟艺术中享有崇高的历史地位。 窟内绘、塑佛像及佛典内容，为佛徒修行、观像、礼拜处所。敦煌石窟是建筑、雕塑、壁画三者结合的立体艺术。
+                洞窟分南北两区:南区492个洞窟是莫高窟礼佛活动的场所，北区243个洞窟主要是僧人和工匠的居住地，内有修行和生活设施土炕坑、 烟道、壁龛、灯台等，但多无彩塑和壁画。
+                <br>&emsp;&emsp;敦煌石窟一名通常用以指莫高窟，是莫高窟、西千佛洞的总称，有时也包括安西的榆林窟。 敦煌石窟与山西大同云冈石窟、河南洛阳龙门石窟并称中国三大石窟。1961年国务院公布莫高窟、榆林窟为全国重点文物保护单位。 1987年，莫高窟作为文化遗产被列入《世界遗产名录》。
+            </p>
+        </div>
+    </div>
+    <h1 class="lead">风吹不灭的历史，沙掩不住的光芒</h1>
+    <div class="sculpture">
+        <div class="view">
+            <img src="./img/mgk (1).jpg" width="360px">
+        </div>
+        <div class="view">
+            <img src="./img/mgk (8).jpg" width="360px">
+        </div>
+        <div class="view">
+            <img src="./img/mgk (6).jpg" width="360px">
+        </div>
+        <div class="view">
+            <img src="./img/mgk (11).jpg" width="360px">
+        </div>
+    </div>
+    <p class="introduce1">千百种佛像姿态各异，形神风貌、性格特征各不相同
+        <br>红、黄、绿、青、蓝、黑、白等各种色彩交替，对比强烈、鲜明而又统一和谐
+        <br>彩塑与四壁的绘画辉映呼应，相得益彰
+        <br>整窟塑像和壁画互相结合，互为一体，互相陪衬，互相补充
+        <br>步入洞窟之中，仿佛身心已经进入庄严华丽、迷幻神奇的佛国净土
+        <br>莫高窟的壁画线条灵动，无与伦比
+        <br>神佛画肢体动作夸张、面容神态祥和
+        <br>仙女画身姿优美，怀抱琵琶，飘逸灵动
+        <br>故事画韵味无穷，舍己救人，感动不已
+        <br>装饰画多为动物、几何图案和山水风景
+        <br>画像数不清，风格也多变
+        <br>"山河破碎飘摇，瑰宝远客他乡"
+    </p>
+    <img src="./img/mgk.jpg" class="symbol">
+    <h1 class="lead">一眼千年,梦回大唐</h1>
+    <div class="sculpture">
+        <div class="view">
+            <img src="./img/mgkf1.jpg">
+        </div>
+        <div class="view">
+            <img src="./img/mgkf2.jpg">
+        </div>
+        <div class="view">
+            <img src="./img/mgkf3.jpg">
+        </div>
+        <div class="view">
+            <img src="img/mgkf4.jpg">
+        </div>
+    </div>
+    <p class="introduce1">这里的雕塑都有脉搏和呼吸，挂着千年不枯的吟笑和娇瞋。这里的每一个场面，每一个角落，都够你流连长久。每一个来到莫高窟的人都是幸运的……——余秋雨</p>
+    <h2 class="lead">莫高窟的信仰正在发散着它的光茫，心动不如行动，就现在！！！</h2>
+    <div id="bottom">
+        <h2 id="bottomh2">更多精彩：
+            <hr>
+        </h2>
+        <ul id="ottomul">
+            <li class="bottomli">
+                <a target="_self" href="../../../city/纽约/niuyue.html"><img src="../../../city/img/bl1.jpg" width="240" height="190" title="纽约">
+                    <p>纽约</p>
+                </a>
+
+            </li>
+            <li class="bottomli">
+                <a target="_self" href="../../../nature/model2/yanhu.html"><img src="../../../nature/model2/model2imgs/青海湖1.png" width="240" height="190" title="茶卡盐湖">
+                    <p>茶卡盐湖</p>
+                </a>
+            </li>
+            <li class="bottomli">
+                <a target="_self" href="../../../history/历史文化长城/历史文化长城.html"><img src="../../../history/图片/古北口长城.jpg" width="240" height="190" title="长城">
+                    <p>长城</p>
+                </a>
+            </li>
+            <li class="bottomli">
+                <a target="_self" href="../../../city/巴黎/bali.htm"><img src="../../../city/img/bl (6).jpg" width="240" height="190" title="巴黎">
+                    <p>巴黎</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
