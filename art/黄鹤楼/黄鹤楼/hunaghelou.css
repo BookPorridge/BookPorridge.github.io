@@ -1,0 +1,109 @@
+#huangleft {
+    height: 3350px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    z-index: -9999;
+    background: linear-gradient(to right, #AFEEEE, white);
+}
+
+#huangright {
+    height: 3350px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1000;
+    background: linear-gradient(to left, #AFEEEE, white);
+}
+
+
+/*以上为底部导航栏*/
+
+#firstimg {
+    display: block;
+    box-shadow: 4px 4px 4px #888;
+    padding: 2px;
+    border-radius: 15px;
+    border: 4px solid #d15a39;
+}
+
+
+/* 这是欢迎词 */
+
+.head {
+    width: 100%;
+    margin: 50px 0 0 0;
+    color: #666;
+    text-align: center;
+    line-height: 70px;
+    height: 70px;
+    font-size: 32px;
+}
+
+.english {
+    text-align: center;
+    line-height: 20px;
+    color: gray;
+    margin: 0 100px 20px 100px;
+}
+
+.introduce>img {
+    height: 655px;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+
+.message1 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.history {
+    width: 100%;
+    height: 405px;
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.view {
+    flex: 1;
+    border: 2px solid gray;
+}
+
+.view>img {
+    height: 405px;
+    width: 100%;
+}
+
+.view>p {
+    background: gray;
+    color: white;
+    text-align: center;
+}
+
+.history1 {
+    color: orange;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.pic {
+    width: 100%;
+    height: 405px;
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.message2 {
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 20px;
+    padding: 10px;
+}
