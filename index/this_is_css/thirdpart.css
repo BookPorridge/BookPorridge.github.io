@@ -1,0 +1,73 @@
+#thirdpart {
+    position: absolute;
+    top: 600px;
+    left: 105px;
+    display: block;
+    overflow: hidden;
+    height: 520px;
+    width: 1400px;
+}
+
+#thirdpartul {
+    display: block;
+    overflow: hidden;
+}
+
+.thirdli {
+    transition: all 0.5s;
+    width: 120px;
+    height: 520px;
+    float: left;
+    display: block;
+    border-radius: 18px;
+}
+
+.thirdli img {
+    border-radius: 18px;
+    display: flex;
+    box-shadow: 10px 5px 10px #666;
+}
+
+#thirdpart li:hover {
+    width: 670px;
+}
+
+#thirdpart-text {
+    position: absolute;
+    top: 1150px;
+    text-align: center;
+    left: 15vw;
+}
+
+#thirdpart-h2c {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 45px;
+    margin: 0px 0px 5px;
+}
+
+#thirdpart-h2e {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    margin: 0px 0px 15px;
+}
+
+#thirdp {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    margin: 0px 0px 200px;
+}
+
+
+/*百叶窗效果结束*/
+
+#look {
+    padding: 5px 5px 0 5px;
+    margin: 20px 0 0 0;
+    text-align: center;
+    height: 25px;
+    position: absolute;
+    top: 1050px;
+    right: 190px;
+    background-color: #e07a5f;
+    border-radius: 6px;
+}
