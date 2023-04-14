@@ -1,0 +1,213 @@
+#yanhuleft {
+    height: 2980px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    z-index: -9999;
+    background: linear-gradient(to right, #AFEEEE, white);
+}
+
+#yanhuright {
+    height: 2980px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1000;
+    background: linear-gradient(to left, #AFEEEE, white);
+}
+
+#yanhu {
+    position: relative;
+    margin: 60px 0 50px 0;
+}
+
+#yanhu>h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.yanhuhc {
+    font-size: 80px;
+    margin: 10px 0 10px 0;
+}
+
+.yanhuhc:last-of-type {
+    font-size: 30PX;
+}
+
+
+/*以上为顶部文字部分*/
+
+#firstpart {
+    margin: 20px 0 40px 0;
+    height: 460px;
+}
+
+.firstp {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    line-height: 45px;
+    margin: 10px 0 10px 50px;
+}
+
+.firstp:first-of-type {
+    font-size: 30px;
+}
+
+.firstulli1,
+.firstulli2 {
+    width: 700px;
+    float: left;
+    margin: 0 10px 0 20px;
+}
+
+.firstulli2>img {
+    display: block;
+    box-shadow: 6px 6px 6px #666;
+    border-radius: 10px;
+}
+
+
+/*动画效果*/
+
+.firstulli2 img {
+    transition: all 0.8s;
+}
+
+.firstulli2 img:hover {
+    scale: 1.4;
+    transform: translate(-200px, 40px);
+}
+
+#img01,
+#img02 {
+    transition: all 0.8s;
+}
+
+#img01:hover {
+    height: 450px;
+    transform: translate(300px);
+    scale: 1.3;
+}
+
+#img01:hover~#img02 {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+#img02:hover {
+    height: 450px;
+    transform: translate(75px, -130px);
+    scale: 1.3;
+}
+
+#look1 {
+    padding: 5px;
+    position: absolute;
+    top: 1640px;
+    right: 80px;
+    background-color: #e07a5f;
+    display: block;
+    border-radius: 6px;
+}
+
+
+/*以上为盐湖第一部分*/
+
+#secondpart {
+    margin: 120px 0 50px 0;
+    height: 490px;
+}
+
+.secondp:first-of-type {
+    font-size: 30px;
+}
+
+.secondli {
+    float: left;
+    width: 720px;
+    height: 470px;
+}
+
+.secondli:last-of-type {
+    margin: 0 0 0 0px;
+}
+
+.secondli img {
+    border-radius: 10px;
+    display: block;
+    box-shadow: 6px 6px 6px #666;
+    margin: 10px 0 10px 40px;
+}
+
+.secondp {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    line-height: 45px;
+    margin: 0px 0 10px 50px;
+}
+
+
+/*以上为第二部分*/
+
+#thirdparttext {
+    margin: 120px 100px 50px 100px;
+}
+
+#thirdpart {
+    margin: 20px 0 50px 0;
+}
+
+#thirdpartul {
+    margin: 10px 50px 10px 9vw;
+    overflow: hidden;
+}
+
+.thirdli {
+    width: 80px;
+    float: left;
+    transition: all 0.8s;
+    margin: 0 10px 0 0px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#lastli {
+    margin: 0 0 0 35px;
+    transition: all 0.8s;
+}
+
+#lastli>img {
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px #666;
+}
+
+.firstulli>img {
+    display: block;
+    box-shadow: 6px 6px 6px #666;
+    border-radius: 10px;
+}
+
+
+/*以上为第五部分*/
+
+#up {
+    height: 30px;
+    text-align: center;
+    background-color: #e07a5f;
+    margin: 2px 400px 2px 400px;
+}
+
+#sixthparttext {
+    margin: 100px 200px 0px 200px;
+    padding: 20px;
+    border: 4px solid #98FB98;
+}
+
+.sixp {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+}
