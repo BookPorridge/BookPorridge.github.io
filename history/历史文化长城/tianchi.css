@@ -1,0 +1,223 @@
+#changchengleft {
+    height: 7800px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    z-index: -9999;
+    background: linear-gradient(to right, #AFEEEE, white);
+}
+
+#changchengright {
+    height: 7800px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1000;
+    background: linear-gradient(to left, #AFEEEE, white);
+}
+
+img:first-of-type {
+    border: 2px solid #e07a5f;
+}
+
+img {
+    padding: 2px;
+    border: 3px solid #e07a5f;
+    border-radius: 12px;
+}
+
+
+/*模块一：天池*/
+
+#tianchitop {
+    position: relative;
+    margin: 40px 0 50px 0;
+}
+
+#tianchitop>h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+#tianchitextc {
+    font-size: 80px;
+}
+
+#tianchitexte {
+    font-size: 35px;
+    margin: 0 0 10px 0;
+}
+
+
+/*以上为顶部文字*/
+
+#firstimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 80px 0px;
+}
+
+#mainimg {
+    box-shadow: 5px 5px 5px 5px #666;
+    display: block;
+    border-radius: 20px;
+    padding: 5px;
+    border: 4px solid #d15a39;
+    position: relative;
+}
+
+
+/*以上为中心图部分*/
+
+#secondpart {
+    margin: 30px 0 150px 80px;
+    text-align: left;
+}
+
+.secondh2c {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    margin: 0 0 10px 0;
+}
+
+.secondpc {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23px;
+    margin: 5px 0 6px 0;
+}
+
+
+/*以上为主图下方文字部分*/
+
+#thirdpart {
+    margin: 30px 100px 60px 100px;
+}
+
+#thirdparth2c {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    margin: 0 0 15px 0;
+}
+
+#thirdparth2e {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 35px;
+    margin: 0 0 15px 0;
+}
+
+
+/*以上为第三部分*/
+
+#fourthpart {
+    overflow: hidden;
+    margin: 100px 0 0 0;
+    height: 450px;
+    margin: 50px 0px 0 87px;
+}
+
+.fourthpartli {
+    float: left;
+    width: 650px;
+}
+
+.fourthpartli:last-of-type {
+    right: 0;
+    margin: 0 0 0 30px;
+}
+
+.fourthpartp {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    margin: 5px 30px 14px 30px;
+    line-height: 34px;
+}
+
+#fifthpart {
+    margin: 100px 0 100px 0;
+}
+
+.fourthimg {
+    display: block;
+    box-shadow: 6px 6px 6px #666;
+    border-radius: 8px;
+    border: 1px solid white;
+    transition: all 0.5s;
+}
+
+.fourthimg:hover {
+    height: 450px;
+    width: 680px;
+}
+
+#banner {
+    width: 1536px;
+    height: 500px;
+    border: 2px solid #999;
+    text-decoration: none;
+    list-style: none;
+    overflow: hidden;
+}
+
+#imglist {
+    width: 7680px;
+    height: 500px;
+}
+
+#imglist img {
+    width: 1536px;
+    height: 500px;
+    /* margin-top: 75px; */
+}
+
+#imglist li {
+    float: left;
+}
+
+.prev {
+    z-index: 9999;
+    background: #666;
+    width: 30px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    left: 5px;
+    top: 200px;
+    cursor: pointer;
+}
+
+.next {
+    z-index: 9999;
+    background: #666;
+    width: 30px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    position: relative;
+    right: 5px;
+    top: 200px;
+    cursor: pointer;
+}
+
+#icolist {
+    position: absolute;
+    right: 10px;
+    top: 560px;
+}
+
+#icolist li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #666;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+}
