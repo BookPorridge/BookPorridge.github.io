@@ -1,0 +1,65 @@
+img {
+    padding: 2px;
+    border: 2px solid #d15a39;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px #666;
+}
+
+#yanhu {
+    position: relative;
+    margin: 60px 0 50px 0;
+}
+
+#yanhu>h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.yanhuhc {
+    font-size: 55px;
+    margin: 10px 0 10px 0;
+}
+
+.yanhuhe {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.more1 {
+    width: 1300px;
+    height: 340px;
+    margin: 50px 120px 20px 80px;
+    border: 4px solid #666;
+}
+
+#firstul {
+    height: 340px;
+    width: 1300px;
+    margin: 0 0 0 0;
+}
+
+.firstulli {
+    float: left;
+    width: 550px;
+    height: 340px;
+    padding: 10px;
+    margin: 0 20px 0 50px;
+    text-align: left;
+}
+
+.firstp {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 10px 0px 5px 0px;
+}
+
+.firstulli img {
+    transition: all 0.8s;
+    padding: 3px;
+    border: 3px solid#d15a39;
+    border-radius: 10px;
+}
+
+.firstulli img:hover {
+    scale: 1.3;
+}
