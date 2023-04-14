@@ -1,0 +1,80 @@
+#niuyueleft {
+    height: 3180px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    z-index: -9999;
+    background: linear-gradient(to right, #AFEEEE, white);
+}
+
+#niuyueright {
+    height: 3180px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1000;
+    background: linear-gradient(to left, #AFEEEE, white);
+}
+
+
+/*以上为底部导航栏*/
+
+
+/* 这是欢迎词 */
+
+.head {
+    color: #666;
+    text-align: center;
+    line-height: 70px;
+    height: 70px;
+    font-size: 32px;
+}
+
+.english {
+    text-align: center;
+    line-height: 20px;
+    color: gray;
+}
+
+.introduce>img {
+    position: relative;
+    height: 650px;
+    margin-top: 10px;
+    left: 10px;
+    border-radius: 20px;
+    box-shadow: 6px 6px 6px #666;
+    padding: 5px;
+    border: 4px solid #d15a39;
+}
+
+.message1 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.tradition {
+    column-count: 3;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.tradition img {
+    width: 100%;
+}
+
+.f {
+    border: 3px solid gray;
+    margin-bottom: 12px;
+    padding: 5px;
+}
+
+.f>p {
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    background: #666;
+    color: aliceblue;
+}
