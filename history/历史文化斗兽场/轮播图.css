@@ -1,0 +1,30 @@
+#thirdpart {
+    margin: 0 40px 0 105px;
+    display: block;
+    overflow: hidden;
+    height: 600px;
+}
+
+#thirdpartul {
+    display: block;
+    overflow: hidden;
+}
+
+.thirdli {
+    transition: all 0.5s;
+    width: 120px;
+    height: 470px;
+    float: left;
+    display: block;
+    border-radius: 18px;
+}
+
+.thirdli img {
+    border-radius: 18px;
+    display: flex;
+    box-shadow: 10px 5px 10px #666;
+}
+
+#thirdpart li:hover {
+    width: 670px;
+}
