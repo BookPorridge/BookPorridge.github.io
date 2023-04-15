@@ -1,3 +1,22 @@
+#moreleft {
+    height: 3050px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    z-index: -9999;
+    background: linear-gradient(to right, #AFEEEE, white);
+}
+
+#moreright {
+    height: 3050px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1000;
+    background: linear-gradient(to left, #AFEEEE, white);
+}
+
 img {
     padding: 2px;
     border: 2px solid #d15a39;
