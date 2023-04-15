@@ -1,3 +1,22 @@
+#shouleft {
+    height: 4100px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    z-index: -9999;
+    background: linear-gradient(to right, #AFEEEE, white);
+}
+
+#shouright {
+    height: 4100px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -1000;
+    background: linear-gradient(to left, #AFEEEE, white);
+}
+
 /*模块一：天池*/
 
 #tianchitop {
